@@ -1,0 +1,98 @@
+  /*GALERIA*/
+  .h1lomitos
+ {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 6rem;
+    text-align: center; 
+    padding-bottom: 20px;
+ }
+
+.h3cards
+{
+  font-size: 40px;
+  border: 1px solid;
+  text-align: center;
+}
+
+ @media(max-width:715px)
+ {
+    .h1lomitos
+ {
+     font-size: 4rem;
+     text-align: center;
+ }
+}
+/*ANIDACION */
+ .row
+ { 
+     .col-sm-6
+ {
+     padding-bottom: 3rem;
+
+     h4 {
+         font-weight: 900;
+     }
+
+     .card
+ {
+     width:100%;
+
+     .card-title
+ {
+     background: $background-principal;
+     color: white;
+     padding: 5px;
+     font-size: 20px;
+     font-family: 'Alfa Slab One', cursive;
+     font-family: 'Arvo';
+     letter-spacing: 2px;
+ }
+ 
+ .card-text
+ {
+     font-size: 15px;
+     color: $background-principal;
+ }
+ 
+ }
+
+
+ }
+ 
+ .h2cards
+ {
+    color: rgb(255, 255, 255);
+    background: $background-principal;
+    padding: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+ }
+ 
+ .imglogo
+ {
+     width: 100%;
+     text-align: center;
+ }
+ 
+
+ 
+ .card-title
+ {
+     background: $background-principal;
+     color: white;
+     padding: 5px;
+     font-size: 20px;
+     font-family: 'Alfa Slab One', cursive;
+     font-family: 'Arvo';
+     letter-spacing: 2px;
+ }
+ 
+ .card-text
+ {
+     font-size: 15px;
+     color: $background-principal;
+ }
+
+
+}

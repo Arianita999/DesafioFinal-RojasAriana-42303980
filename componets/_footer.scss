@@ -1,0 +1,181 @@
+/*MAPS*/
+$redes:(
+   color:white,
+);
+
+/*MIXIN*/
+@mixin tamanio($anchor,$altor) 
+{
+    height: $altor;
+    width: $anchor;
+}
+
+/*FOOTER*/
+footer
+{
+    position: relative;
+    /*COLOCANDO MIXIN*/
+    @include tamanio(100%, auto);
+    padding: 50px 100px;
+    background: $background-principal;
+    font-size: 15px;
+}
+footer .containerfoot
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .containerfoot .sec h2
+{
+  position: relative;
+  /*COLOCANDO MAPS*/
+  color: map-get($redes,color);
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+
+footer .containerfoot .sec h2::before
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    @include tamanio(50px,2px);
+    @each $var, $colores in $redes {
+        color: $colores;
+        
+    }
+}
+
+footer .containerfoot .sec p
+{
+    color: map-get($redes,color);
+
+}
+.sci
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+
+.sci li
+{
+    list-style: none;
+}
+
+.sci li a
+{
+    display: inline-block;
+    @include tamanio(48px,48px );
+    background: rgb(100, 98, 98);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover
+{
+  background: $background-secundaria;
+}
+
+.sci li a .bi
+{
+    color: rgb(252, 252, 252);
+    font-size: 20px;
+
+}
+
+.quicklinks li
+{
+  list-style: none;
+
+}
+
+.quicklinks li a
+{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover
+{
+    color: #f3f0d5;
+}
+
+.info
+{
+    position: relative;
+}
+
+.info li
+{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1)
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+.info li span
+{
+    color: white;
+}
+
+.info a
+{
+    color: #f3f0d5;
+    text-decoration: none;
+}
+
+.info li a:hover 
+{
+    color: #f3f0d5;
+}
+
+.copyrightText
+{
+    width: 100%;
+    background: rgb(19, 19, 19);
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+@media(max-width: 991px)
+{
+    footer 
+    {
+        padding: 40px;
+    }
+
+    footer .containerfoot
+    {
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    .copyrightText
+    {
+        padding: 8px 40px;
+    }
+}
+
+@media(max-width:768px)
+{
+    footer .containerfoot
+    {
+       grid-template-columns: repeat(1,1fr);
+    }
+}

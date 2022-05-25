@@ -1,0 +1,20 @@
+/*FORMULARIO*/
+.h1form
+{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 4rem;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+/*ANIDACION */
+.containerform
+{
+    border: 2px solid $background-principal;
+    padding: 5rem;
+
+    label
+{
+    font-size: 20px;
+}
+}
+

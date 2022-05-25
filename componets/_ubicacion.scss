@@ -1,0 +1,24 @@
+/* UBICACION */
+.h1ubi
+{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 6rem;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.ubicacion
+{
+    width:100%; 
+    text-align:center;
+}
+
+@media(max-width:715px)
+{
+    .h1ubi
+{
+    font-size: 4rem;
+    text-align: center;
+}
+
+}
